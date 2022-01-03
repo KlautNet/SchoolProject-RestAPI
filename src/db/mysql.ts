@@ -1,5 +1,4 @@
 import { createPool, Pool } from 'mysql2/promise';
-import consoleLogger from '../utils/console-logger';
 import config from '../config/config';
 
 const params = {
