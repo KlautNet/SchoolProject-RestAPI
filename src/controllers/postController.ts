@@ -12,7 +12,7 @@ export async function getPost(req: Request, res: Response, next: NextFunction) {
 export async function getPosts(req: Request, res: Response): Promise<Response | void> {
     try {
         const conn = await connect();
-        const posts = await conn.query('SELECT * FROM posts');
+        const posts = await conn.query('SELECT * FROM postsdev');
         return res.status(200).json(posts[0]);
     } catch (error: unknown) {
         if (typeof error == 'string') {
