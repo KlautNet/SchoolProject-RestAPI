@@ -1,3 +1,3 @@
 # Recursion-RestAPI
 
-RestAPI for a simpel school project blog website.
+RestAPI for a simple school project blog website.
