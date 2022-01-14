@@ -16,7 +16,7 @@ export async function getPosts(req: Request, res: Response): Promise<Response | 
         return res.status(200).json(posts[0]);
     } catch (error: unknown) {
         if (typeof error == 'string') {
-            consoleLogger.error(error, 'MYSQL');
+            //consoleLogger.error(error, 'MYSQL');
         }
         return res.status(200).json({ error: error });
     }
